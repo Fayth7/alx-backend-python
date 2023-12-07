@@ -3,6 +3,7 @@
 
 import math
 
+
 def floor(n: float) -> int:
     """
     Returns the floor of the given float.
@@ -14,6 +15,7 @@ def floor(n: float) -> int:
         int: The floor of the input float.
     """
     return math.floor(n)
+
 
 if __name__ == "__main__":
     ans = floor(3.14)
