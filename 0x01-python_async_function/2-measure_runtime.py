@@ -7,9 +7,6 @@ import asyncio
 from typing import List
 import time
 
-# Importing wait_n from the previous file
-from 1-concurrent_coroutines import wait_n
-
 
 def measure_time(n: int, max_delay: int) -> float:
     """
