@@ -16,15 +16,13 @@ def measure_time(n: int, max_delay: int) -> float:
     :param max_delay: The maximum delay in seconds.
     :return: The average time taken for each execution.
     """
+    wait_n = __import__('1-concurrent_coroutines').wait_n
+
     start_time = time.time()
-
     asyncio.run(wait_n(n, max_delay))
+    total_time = time.time() - start_time
 
-    end_time = time.time()
-    total_time = end_time - start_time
-
-    average_time = total_time / n
-    return average_time
+    return total_time / n
 
 
 if __name__ == "__main__":
