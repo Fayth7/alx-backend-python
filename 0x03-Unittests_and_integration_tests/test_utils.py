@@ -45,7 +45,6 @@ class TestGetJson(unittest.TestCase):
         # Call the function with the mocked requests.get
         result = get_json(test_url)
 
-        # Assert that the mocked requests.get was called exactly once with the test_url
         mock_requests_get.assert_called_once_with(test_url)
 
         # Assert that the output of get_json is equal to the test_payload
